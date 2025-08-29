@@ -1,0 +1,101 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  width: 100vw;
+  height: 100%;
+  font-family: 'Segoe UI', sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(135deg, #1a1a1d, #2c2c34); /* fundo escuro com degradê */
+  color: #fff;
+  overflow: hidden;
+}
+
+.container {
+  text-align: center;
+  padding: 30px;
+  border-radius: 12px;
+  animation: fadeIn 1s ease-out;
+}
+
+.gift-icon {
+  width: 2.2rem;
+  display: inline-block;
+  animation: shake 1.2s infinite;
+}
+
+.message .span-header {
+  font-size: 2.3rem;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 3rem;
+  animation: slideIn 1s ease-out;
+}
+
+.message h1 {
+  font-size: 2.3rem;
+  margin-bottom: 20px;
+  animation: slideIn 1s ease-out;
+}
+
+.message p {
+  font-size: 1.2rem;
+  margin-bottom: 4rem;
+  opacity: 0;
+  animation: fadeInText 1.5s ease-out forwards;
+  animation-delay: 0.5s;
+}
+
+.whatsapp-button {
+  display: inline-block;
+  background: linear-gradient(135deg, #8e2de2, #4a00e0);
+  color: white;
+  font-size: 1.2rem;
+  font-weight: bold;
+  padding: 15px 40px;
+  border-radius: 50px;
+  text-decoration: none;
+  text-transform: uppercase;
+  box-shadow: 0 8px 20px rgba(138, 43, 226, 0.3);
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+  animation: pulseButton 1.5s infinite;
+}
+
+@keyframes shake {
+  0%, 100% { transform: rotate(0deg); }
+  20% { transform: rotate(-10deg); }
+  40% { transform: rotate(10deg); }
+  60% { transform: rotate(-6deg); }
+  80% { transform: rotate(6deg); }
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes slideIn {
+  from { transform: translateY(-40px); opacity: 0; }
+  to { transform: translateY(0); opacity: 1; }
+}
+
+@keyframes fadeInText {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes pulseButton {
+  0% { transform: scale(1.0); }
+  50% { transform: scale(1.1); }
+  100% { transform: scale(1.0); }
+}
