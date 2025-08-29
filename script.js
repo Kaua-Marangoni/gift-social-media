@@ -1,6 +1,6 @@
 // Função de animação de confetes
 const launchConfetti = () => {
-  const duration = 5 * 450;
+  const duration = 5 * 500;
   const end = Date.now() + duration;
   const colors = ['#ff0', '#ff6347', '#7fff00', '#00bfff', '#ff1493'];
 
