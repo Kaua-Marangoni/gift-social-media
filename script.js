@@ -1,4 +1,3 @@
-// Função de animação de confetes
 const launchConfetti = () => {
   const duration = 5 * 500;
   const end = Date.now() + duration;
